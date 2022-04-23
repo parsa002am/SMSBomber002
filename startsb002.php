@@ -1,6 +1,11 @@
 <?php
 require "SMSbomber002.php";
+/* coded by @parsa002am
 
+date : 1401/02/03
+
+ smsbomber002
+ */
 function startsb002($tnum)
 {
     if (preg_match("/^09[0-9]{9}$/", $tnum)) {

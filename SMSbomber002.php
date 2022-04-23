@@ -2,7 +2,7 @@
 
 /* coded by @parsa002am
 
-start at 1401/02/02
+date : 1401/02/02
 
 class smsbomber002
  */

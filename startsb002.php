@@ -75,12 +75,12 @@ function startsb002($tnum)
         return "The number is Not Valid!";
     }
 }
-echo "wellcome to SMSbomber002 (By @parsa002am)";
-$gnumber = readline("enter phone number :");
+echo "wellcome to SMSbomber002 (By @parsa002am) \n";
+$gnumber = readline("Enter phone number :");
 $gc = readline("enter number for while (1-100) :");
 do {
     echo startsb002($gnumber);
     $gc--;
-    echo "/n sleep 20 sec :/";
+    echo "\n sleep 20 sec :/";
     sleep(20);
-} while ($gc <= 0);
+} while ($gc >= 0);

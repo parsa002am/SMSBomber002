@@ -88,4 +88,4 @@ do {
     $gc--;
     echo "\n sleep 20 sec :/";
     sleep(20);
-} while ($gc >= 0);
+} while ($gc > 0);

@@ -5,7 +5,7 @@ $TestNumber="09121122333";
 try {
 $sb = new smsbomber002($TestNumber);
 
-echo $sb->SazkiVam();
+echo $sb->SbarghMan();
 } catch (Exception $e) {
 
     echo $e->getMessage();

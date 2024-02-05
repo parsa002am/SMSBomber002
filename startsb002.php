@@ -1,5 +1,5 @@
 <?php
-require "SMSbomber002.php";
+require "src/SMSbomber002.php";
 /* coded by @parsa002am
 
 date : 1401/02/03

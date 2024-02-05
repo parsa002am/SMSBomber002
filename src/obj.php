@@ -3,20 +3,13 @@
 class mbomber002
 {
     private $Number;
-    private $TimeOut = 5;
     public function __construct($NUM)
     {
-        $this->Number = $NUM;
+        $this->$Number = $NUM;
     }
-
-    public function SetTimeOut($timeSec =5){
-        $this->TimeOut = $timeSec;
-    }
-
 
     public function s002($lurl, $datas = [], $headers = [],$type=1)
     {
-        
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $lurl);
 
@@ -35,7 +28,7 @@ class mbomber002
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($datas, true));
         else
         curl_setopt($ch, CURLOPT_POSTFIELDS, $datas);
-        curl_setopt($ch, CURLOPT_TIMEOUT, $this->TimeOut);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
         return curl_exec($ch);
     }
     public function sg002($lurl, $headers = [])
@@ -50,7 +43,7 @@ class mbomber002
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, $this->TimeOut);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 
         return curl_exec($ch);
     }

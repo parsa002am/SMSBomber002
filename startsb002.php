@@ -9,7 +9,9 @@ date : 1401/02/03
 function startsb002($tnum)
 {
     if (preg_match("/^09[0-9]{9}$/", $tnum)) {
+
         $sb = new smsbomber002($tnum);
+        $sb->SetTimeOut(5);
 
         $sb->Szarinpall();
         echo "sent! \n";
@@ -74,6 +76,12 @@ function startsb002($tnum)
         $sb->Sbimebazar();
         echo "sent! \n";
         $sb->stapsi();
+        echo "sent! \n";
+        $sb->SazkiCom();
+        echo "sent! \n";
+        $sb->SazkiVam();
+        echo "sent! \n";
+        $sb->SbarghMan();
         echo "sent! \n";
         return "round finished !";
     } else {

